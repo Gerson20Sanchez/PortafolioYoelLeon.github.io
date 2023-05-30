@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #1114b1df;
+    color: #ffffffe9;
+    font: 200 14px 'Poppins', 'sans-serif';
+}
+h2{ 
+    font-size: 36px; /*Tamaño de letra de los h2*/
+    line-height: 36px; /*Configura el espacio entre las lineas*/
+}
+h3{
+    color: #00ffff9a;
+    font-size: 18px; /*Tamaño de la letra de h3*/
+    font-weight: 300;
+}
+nav{
+    position: fixed; /*Para que se mueva el meno*/
+    width: 100%;
+    height: 55px;
+    background-color: #10070768;
+    border-bottom: 1px solid #fbfafadf;
+    padding-top: 10px;
+    text-align: center;
+}
+
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    padding-top: 12px;
+}
+
+section{
+    padding: 10px 100px 10px 100px;
+}
+
+p{
+    text-align: justify;
+}
+
+cite{
+    font-weight: 300; /*Grosor de letra para cite*/
+}
+
+i{
+    font-size: 24px;
+}
+
+i:hover{
+    color: rgb(210, 162, 19);
+}
+
+a:any-link{
+    color: white
+}
+
+a:-webkit-any-link{
+    color: white;
+}
+
+a:-moz-any-link{
+    color: white
+}
+
+ul{
+    list-style: none; /*Para quitar los puntos blancos de la lista*/
+}
+
+li{
+    float: left;
+    margin-right: 5px;
+}
+button{
+    border-radius: 10px;
+}
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+}
+/*sadjfkasjdfk espacio de codigo*/
+.hastag{
+    color: aqua;
+}
+.seccion{
+    padding: 10px;
+}
+.logo{
+    padding: 0px;
+}
+#redessociales{
+    margin-top: 20px;
+    list-style: none;
+}
+#inicio{
+    background-image: url("..img/inicio.png");
+    background-repeat:  no-repeat;
+    background-size: cover ;
+    min-height: 280px;
+    padding: 75px;
+}
+#experencia{
+    background-color: white;
+    color: #995454;
+}
+#portafolio{
+    border-top: 1px solid #b9c928e9;
+}
+.masinfo button{
+    background-color:#afbe2068 ;
+    font-weight:600px ;
+    padding-left: 15px;
+    padding-right:15px ;
+    margin-right: 5px;
+    padding: 5px;
+}
+
+/* cars de Portafolio*/
+.filaportafolio{
+    display: flex;
+    flex-direction: row;/* ordear los elementos*/
+    flex-wrap: wrap; /*responsivo*/
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.card{
+    width: 250px;
+    background-color: #1919;
+    border-radius: 15px;
+    
+}
+.card img, .card video{
+    border-radius: 15px 15px 0 0;
+}
+.card h3{
+    color: #9fad2268;
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card h3, .card h4 .card p, .card .masinfo{
+    padding: 0 15px;
+}
+.card .masinfo{
+    margin:  15px 0px 15px 0px;
+
+}
+.card .sep{
+     margin: 15px 0px 15px 0px;
+}
+.card .masinfo  button{
+    float: right;
+}
+/*** card experiencia***/
+.gripexp{
+    display: grid;
+    grid-template-columns:  repeat(4,350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cardexp{
+    background-color: #10070768;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardexp li{
+    height: 5px;
+}
+/****Furmulario****/
+.itemform{
+    display:  grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700px;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1 solid white;
+}
+input[type="submit"]{
+    background-color:  black;
+    border: 1px solid black;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self:  end;
+}
