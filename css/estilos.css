@@ -3,9 +3,9 @@
     padding: 0px;
 }
 body{
-    background-color: #1114b1df;
+    background-color: #06220cdf;
     color: #ffffffe9;
-    font: 200 14px 'Poppins', 'sans-serif';
+    font: 200px 14px 'Poppins', 'sans-serif';
 }
 h2{ 
     font-size: 36px; /*Tamaño de letra de los h2*/
@@ -17,7 +17,7 @@ h3{
     font-weight: 300;
 }
 nav{
-    position: fixed; /*Para que se mueva el meno*/
+    position: fixed; /*Para que se mueva el menu*/
     width: 100%;
     height: 55px;
     background-color: #10070768;
@@ -35,7 +35,9 @@ nav ul li{
 }
 
 section{
-    padding: 10px 100px 10px 100px;
+    padding: 20px ; /*parte de la cabecera*/
+   
+    justify-content: center;
 }
 
 p{
@@ -92,26 +94,31 @@ footer ul li{
 .hastag{
     color: aqua;
 }
+.seccionn{
+    display: flex;
+    justify-content: center;
+}
 .seccion{
-    padding: 10px;
+    padding-left: 30px;
 }
 .logo{
-    padding: 0px;
+    padding: 0px; 
 }
+
 #redessociales{
-    margin-top: 20px;
+    margin-top: 50px;
     list-style: none;
 }
 #inicio{
-    background-image: url("..img/inicio.png");
+    background-image: url("..img/inicio_2.png");
     background-repeat:  no-repeat;
     background-size: cover ;
     min-height: 280px;
-    padding: 75px;
+    padding: center;
 }
-#experencia{
-    background-color: white;
-    color: #995454;
+#Experiencia{
+    background-color: rgb(56, 49, 49);
+    color: #db1c1c;
 }
 #portafolio{
     border-top: 1px solid #b9c928e9;
@@ -165,18 +172,23 @@ footer ul li{
     float: right;
 }
 /*** card experiencia***/
-.gripexp{
+.gridexp{
     display: grid;
-    grid-template-columns:  repeat(4,350px);
-    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
     justify-content: space-between;
     align-content: space-around;
 }
 .cardexp{
-    background-color: #10070768;
-    border-radius: 15px;
-    color: white;
-    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;/* ordear los elementos*/
+    flex-wrap: wrap; /*responsivo*/
+    justify-content:space-evenly;
+    gap: 30px;
+    background-color: #1d1bb168;
+    border-radius: 30px;
+    color: rgb(238, 237, 237);
+    padding: 15px 15px;
 }
 .cardexp h2{
     margin-bottom: 5px;
@@ -192,27 +204,38 @@ footer ul li{
     justify-content: flex-end;
 }
 .cardexp li{
-    height: 5px;
+    height: 30px;
 }
 /****Furmulario****/
+
 .itemform{
-    display:  grid;
+    display:  flex;
     grid-template-columns: 150px 350px;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 .itemform label{
     font-weight: 700px;
+    text-align: right;
 }
 .itemform input, .itemform textarea{
+    text-align: right;
     border-radius: 5px;
-    border: 1 solid white;
+    border: 1 solid rgb(224, 198, 198);
 }
 input[type="submit"]{
-    background-color:  black;
+    background-color:  rgba(24, 7, 7, 0.788);
     border: 1px solid black;
-    color: white;
+    color: rgb(245, 238, 238);
     padding: 10px;
     grid-column: 2/3;
     justify-self:  end;
 }
+.logof{/*para el footer=pie_de_pagina*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* el punto(.) es para llamar a una clase,
