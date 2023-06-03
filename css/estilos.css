@@ -209,17 +209,16 @@ footer ul li{
 /****Furmulario****/
 
 .itemform{
-    display:  flex;
+    display: grid;
     grid-template-columns: 150px 350px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .itemform label{
     font-weight: 700px;
-    text-align: right;
 }
 .itemform input, .itemform textarea{
-    text-align: right;
+    /*text-align: right;*/
     border-radius: 5px;
     border: 1 solid rgb(224, 198, 198);
 }
